@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetTrend Apparel</title>
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    
+    body { background-color: #f5f5f5; color: #333; }
+    
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header h1 { font-size: 2rem; letter-spacing: 1px; }
+    
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    
+    nav a:hover { text-decoration: underline; }
+    
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1602810312283-7a0f8c65e44d?fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
+    }
+    
+    .hero h2 { font-size: 2.5rem; }
+    
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    
+    .product-card:hover { transform: translateY(-5px); }
+    
+    .product-card img { width: 100%; height: 250px; object-fit: cover; }
+    
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    .product-info h3 { margin-bottom: 10px; font-size: 1.2rem; }
+    .product-info p { margin-bottom: 10px; color: #666; font-size: 0.9rem; }
+    .product-info span { font-weight: bold; color: #222; font-size: 1.1rem; }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #222;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    
+    .btn:hover { background-color: #555; }
+    
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StreetTrend Apparel</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Trendy, Baggy, Affordable Streetwear</h2>
+  </section>
+
+  <section class="products" id="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1618354691229-bf8f36a625d1?fit=crop&w=500&q=80" alt="Hoodie 1">
+      <div class="product-info">
+        <h3>Urban Oversized Hoodie</h3>
+        <p>Baggy, stylish, premium cotton</p>
+        <span>$45 CAD</span><br>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1602810312283-7a0f8c65e44d?fit=crop&w=500&q=80" alt="Jogger 1">
+      <div class="product-info">
+        <h3>Relaxed Fit Joggers</h3>
+        <p>Comfortable, durable, everyday wear</p>
+        <span>$40 CAD</span><br>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1618354691229-bf8f36a625d1?fit=crop&w=500&q=80" alt="Hoodie 2">
+      <div class="product-info">
+        <h3>Classic Pullover Hoodie</h3>
+        <p>Simple, versatile, street fashion</p>
+        <span>$50 CAD</span><br>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1602810312283-7a0f8c65e44d?fit=crop&w=500&q=80" alt="Jogger 2">
+      <div class="product-info">
+        <h3>Wide-Leg Joggers</h3>
+        <p>Baggy fit, stylish, breathable fabric</p>
+        <span>$42 CAD</span><br>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 StreetTrend Apparel | Affordable, Baggy, Trendy
+  </footer>
+</body>
+</html>
